@@ -1,0 +1,7 @@
+{
+    "movie" : {
+        "status" : false,
+        "tickets" : 0,
+        "message" : "Tickets not available, chal bhag!"
+    }
+}

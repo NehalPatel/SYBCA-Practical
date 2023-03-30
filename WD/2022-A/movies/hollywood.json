@@ -1,0 +1,19 @@
+{
+    "movies" : [
+        {
+            "name" : "Hollywood Movie 1",
+            "details" : "Some demonstration details for the movie",
+            "poster" : "https://via.placeholder.com/300x400.png?text=Hollywood Movie 1"
+        },
+        {
+            "name" : "Hollywood Movie 2",
+            "details" : "Some demonstration details for the movie",
+            "poster" : "https://via.placeholder.com/300x400.png?text=Hollywood Movie 2"
+        },
+        {
+            "name" : "Hollywood Movie 3",
+            "details" : "Some demonstration details for the movie",
+            "poster" : "https://via.placeholder.com/300x400.png?text=Hollywood Movie 3"
+        }
+    ]
+}

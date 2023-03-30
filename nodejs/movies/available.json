@@ -1,0 +1,7 @@
+{
+    "movie" : {
+        "status" : true,
+        "tickets" : 2,
+        "message" : "Tickets available"
+    }
+}

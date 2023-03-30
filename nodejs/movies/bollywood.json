@@ -1,0 +1,19 @@
+{
+    "movies" : [
+        {
+            "name" : "Bollywood Movie 1",
+            "details" : "Some demonstration details for the movie",
+            "poster" : "https://via.placeholder.com/300x400.png?text=Bollywood Movie 1"
+        },
+        {
+            "name" : "Bollywood Movie 2",
+            "details" : "Some demonstration details for the movie",
+            "poster" : "https://via.placeholder.com/300x400.png?text=Bollywood Movie 2"
+        },
+        {
+            "name" : "Bollywood Movie 3",
+            "details" : "Some demonstration details for the movie",
+            "poster" : "https://via.placeholder.com/300x400.png?text=Bollywood Movie 3"
+        }
+    ]
+}
