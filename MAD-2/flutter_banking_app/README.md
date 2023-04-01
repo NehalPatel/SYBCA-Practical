@@ -1,16 +1,17 @@
-# flutter_banking_app
+# SDJIC - Practical Paper Solutions
 
-A new Flutter project.
+Project contain the paper solutions of past practical papers
 
-## Getting Started
+## Web Application ScreenShot
 
-This project is a starting point for a Flutter application.
+## Flutter Application ScreenShot
 
-A few resources to get you started if this is your first Flutter project:
+<img src="assets/screenshot/login.png" height="500em" />&nbsp;
+<img src="assets/screenshot/signup.png" height="500em" />&nbsp;
+<img src="assets/screenshot/dashboard.png" height="500em" />&nbsp;
+<img src="assets/screenshot/drawer.png" height="500em" />&nbsp;
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Links
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* [Website](https://nehalpatel.in)
+* [Github](https://github.com/nehalpatel)

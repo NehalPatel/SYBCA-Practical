@@ -1,8 +1,6 @@
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_banking_app/components/my_app_template.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({Key? key}) : super(key: key);
@@ -19,8 +17,8 @@ class _SignupPageState extends State<SignupPage> {
   String _password = '';
   String _cpassword = '';
 
-  String validEmail = "nehal@gmail.com";
-  String validPassword = "nehal123";
+  String validEmail = "raju@gmail.com";
+  String validPassword = "raju123";
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +27,7 @@ class _SignupPageState extends State<SignupPage> {
         child: Column(
           children: [
             SizedBox(height: 40),
-            Text("GolMaal Bank",
+            Text("Mahalaxmi Cheat Fund",
                 style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold)

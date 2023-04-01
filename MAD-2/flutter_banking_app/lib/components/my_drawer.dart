@@ -9,11 +9,10 @@ class MyDrawer extends StatelessWidget {
       child: ListView(
         children: [
           const UserAccountsDrawerHeader(
-            accountName: Text("Nehal Patel"),
-            accountEmail: Text("nehal@gmail.com"),
+            accountName: Text("Raju Bolbachaan"),
+            accountEmail: Text("raju@gmail.com"),
             currentAccountPicture: CircleAvatar(
-              backgroundColor: Colors.lightBlue,
-              child: Text("NP",style: TextStyle(fontSize: 40.0, color: Colors.black)),
+              backgroundImage: AssetImage('assets/images/raju.jpg')
             ),
           ),
           ListTile(

@@ -17,8 +17,8 @@ class _LoginPageState extends State<LoginPage> {
   String _email = '';
   String _password = '';
 
-  String validEmail = "nehal@gmail.com";
-  String validPassword = "nehal123";
+  String validEmail = "raju@gmail.com";
+  String validPassword = "raju123";
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             children: [
               SizedBox(height: 40),
-              Text("GolMaal Bank",
+              Text("Mahalaxmi Cheat Fund",
                   style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold)
