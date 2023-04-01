@@ -6,10 +6,10 @@ Project contain the paper solutions of past practical papers
 
 ## Flutter Application ScreenShot
 
-<img src="assets/screenshot/login.png" height="500em" />&nbsp;
-<img src="assets/screenshot/signup.png" height="500em" />&nbsp;
-<img src="assets/screenshot/dashboard.png" height="500em" />&nbsp;
-<img src="assets/screenshot/drawer.png" height="500em" />&nbsp;
+<img src="MAD-2/flutter_banking_app/assets/screenshot/login.png" height="500em" />&nbsp;
+<img src="MAD-2/flutter_banking_app/assets/screenshot/signup.png" height="500em" />&nbsp;
+<img src="MAD-2/flutter_banking_app/assets/screenshot/dashboard.png" height="500em" />&nbsp;
+<img src="MAD-2/flutter_banking_app/assets/screenshot/drawer.png" height="500em" />&nbsp;
 
 ## Links
 
