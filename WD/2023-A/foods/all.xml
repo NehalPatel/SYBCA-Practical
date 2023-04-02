@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foods>
+    <fastfood>
+        <item>
+            <name>Burger</name>
+            <price>150.00</price>
+            <description>A classic beef burger with cheese, lettuce, tomato, and onion</description>
+            <image>burger.jpg</image>
+        </item>
+        <item>
+            <name>Pizza</name>
+            <price>200.00</price>
+            <description>A large pepperoni pizza with extra cheese</description>
+            <image>pizza.jpg</image>
+        </item>
+    </fastfood>
+    <chinese>
+        <item>
+            <name>Veg Manchurian</name>
+            <price>150.00</price>
+            <description>A spicy stir-fry dish with manchurian, vegetables, and chili peppers</description>
+            <image>vegmanchurian.jpg</image>
+        </item>
+        <item>
+            <name>Veg Chinese Bhel</name>
+            <price>100</price>
+            <description>A savory dish with tender rice, broccoli, and garlic sauce</description>
+            <image>Chinese-Bhel.jpg</image>
+        </item>
+    </chinese>
+    <punjabi>
+        <item>
+            <name>Churchur Naan</name>
+            <price>250</price>
+            <description>A crispy spiced potatoes naan with butter and sauces</description>
+            <image>Chur-Chur-Naan.jpg</image>
+        </item>
+        <item>
+            <name>Veg Biryani</name>
+            <price>150</price>
+            <description>Rich and creamy tomato-based curry with butter</description>
+            <image>Veg-Biryani.jpg</image>
+        </item>
+    </punjabi>
+</foods>

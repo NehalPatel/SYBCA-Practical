@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foods>
+    <item>
+        <name>Churchur Naan</name>
+        <price>250</price>
+        <description>A crispy spiced potatoes naan with butter and sauces</description>
+        <image>Chur-Chur-Naan.jpg</image>
+    </item>
+    <item>
+        <name>Veg Biryani</name>
+        <price>150</price>
+        <description>Rich and creamy tomato-based curry with butter</description>
+        <image>Veg-Biryani.jpg</image>
+    </item>
+</foods>

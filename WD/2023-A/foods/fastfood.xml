@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foods>
+    <item>
+        <name>Burger</name>
+        <price>150.00</price>
+        <description>A classic beef burger with cheese, lettuce, tomato, and onion</description>
+        <image>burger.jpg</image>
+    </item>
+    <item>
+        <name>Pizza</name>
+        <price>200.00</price>
+        <description>A large pepperoni pizza with extra cheese</description>
+        <image>pizza.jpg</image>
+    </item>
+</foods>

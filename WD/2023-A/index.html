@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Profile using XML</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>jQuery Ajax Demo</h1>
+        <p>Load Restaurant Menu using jQuery Ajax and XML</p>
+
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+            <h1 class="text-body-emphasis">Online Restaurant Management</h1>
+            <p class="col-lg-8 mx-auto fs-5 text-muted">
+                Order your food using online restaurant website.
+            </p>
+            <div class="d-inline-flex gap-2 mb-5">
+                <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+                    Order Now
+                </button>
+                <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+                    Learn more
+                </button>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-5">Foods</h2>
+        <div class="row py-3">
+            <div class="col">
+                <a href="#" class="btn btn-primary btn-sm food-menu" data-type="all">All</a>
+                <a href="#" class="btn btn-secondary btn-sm food-menu" data-type="fastfood">Fastfood</a>
+                <a href="#" class="btn btn-secondary btn-sm food-menu" data-type="punjabi">Punjabi</a>
+                <a href="#" class="btn btn-secondary btn-sm food-menu" data-type="chinese">Chinese</a>
+            </div>
+        </div>
+
+        <div class="foods">
+            <div class="row mt-3">
+                <div class="col col-sm-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x400.png?text=Food+Image" class="card-img-top"
+                            alt="food-image">
+                        <div class="card-body">
+                            <a href="order.html" class="nav-link">
+                                <h5 class="card-title">Food Name</h5>
+                            </a>
+                            <p class="card-text">Food description.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="order.html" class="btn btn-lg btn-primary float-end">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- keep this div hidden so we can clone and add in .food div -->
+
+        <div class="copy-of-food d-none">
+            <div class="col col-sm-4 mb-2">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x400.png?text=Food+Image" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="order.html" class="nav-link">
+                            <h5 class="card-title">Food Name</h5>
+                        </a>
+                        <p class="card-text">Food description.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="order.html" class="btn btn-lg btn-primary float-end">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="container py-3">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2017–2023 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function (e) {
+
+            //load all the foods on page load
+            loadFood('all');
+
+            //load food when user click on menu items
+            $(".food-menu").click(function () {
+                var type = $(this).data('type');
+                loadFood(type);
+            });
+
+            return false;
+        });
+
+        function loadFood(foodType) {
+            $.ajax({
+                url: 'foods/' + foodType + '.xml', // the URL to make the request to
+                method: 'GET', // HTTP method (GET, POST, etc.)
+                dataType: "xml",
+                success: function (response) {
+                    console.log('Data received:', response);
+                    onSuccess(response, foodType);
+                },
+                error: function (xhr, status, error) {
+                    console.log('Error:', error);
+                }
+            });
+        }
+
+        function onSuccess(data, foodType) {
+            //first delete all existing elements of movies in div.movies
+            $('.foods .col').remove();
+
+            $(data).find("item").each(function () {  // loop through each "item" element in the XML file
+                var name = $(this).find("name").text();
+                var price = $(this).find("price").text();
+                var description = $(this).find("description").text();
+                var image = $(this).find("image").text();
+
+                console.table(name, price, description);
+
+                //now clone our hidden movie element
+                var element = $(".copy-of-food").children(".col").clone();
+
+                //fill the details from our JSON response
+                $(".card-title", element).html(name);
+                $(".card-text", element).html(description);
+                $(".card-img-top", element).attr('src', 'assets/images/' + image);
+
+                //add this new element to our movie list
+                $(".foods .row").append(element);
+
+            });
+        }
+    </script>
+</body>
+
+</html>
